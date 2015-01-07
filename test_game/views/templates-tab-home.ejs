@@ -1,0 +1,21 @@
+
+<ion-view view-title="答题游戏">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">题目集</div>
+      <div class="item item-body">
+        <moa-tree dataurl="/users/dept"
+                  expandicon="ion ion-ios7-arrow-right"
+                  collapseicon="ion ion-ios7-arrow-down"></moa-tree>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">最近挑战</div>
+      <div class="item item-body">
+        <div>
+          <moa-table dataurl="/users" limit="10" cols="name"></moa-table>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
